@@ -1,17 +1,5 @@
 # Django Websites Named Entity Recognition and Relation Extraction
 
-<img src="static/media/photos/mahasiswa_dimas.jpg" alt="MarineGEO circle logo" style="height: 60px; width:60px;border-radius:50%"/>
-<img src="static/media/photos/lipi_slamet.jpg" alt="MarineGEO circle logo" style="height: 60px; width:60px;border-radius:50%"/>
-<img src="static/media/photos/lipi_alhafiz.jpg" alt="MarineGEO circle logo" style="height: 60px; width:60px;border-radius:50%"/>
-<img src="static/media/photos/pembimbing_fitrianingsih.jpg" alt="MarineGEO circle logo" style="height: 60px; width:60px;border-radius:50%"/>
-<img src="static/media/photos/pembimbing_rodiah.jpg" alt="MarineGEO circle logo" style="height: 60px; width:60px;border-radius:50%"/>
-
-## Websites Test
-| Prediksi                       | Prediksi Time<br>(Hour:Minutes:Seconds) | Framework | Runtime                  | Ram  | Disk               | Machine          |
-| ------------------------------ | --------------------------------------- | --------- | ------------------------ | ---- | ------------------ | ---------------- |
-| Named Entity Recognition (NER) | 00.00.06                                | Django    | GPU Tesla P100-PCIE-16GB | High | Google Drive 100gb | Google Colab Pro |
-| Relation Extraction (RE)       | 00.03.01                                | Django    | GPU Tesla P100-PCIE-16GB | High | Google Drive 100gb | Google Colab Pro |
-
 ## After
 <img src="After.png" width="1345">
 
@@ -29,8 +17,17 @@
 | BERT-BILSTM     | 61%      | 60%      | 61%         | 0.25.28                                 | GPU Tesla P100-PCIE-16GB | High | Google Drive 100gb | Google Colab Pro |
 | BERT-BILSTM-CRF | 60%      | 59%      | 60%         | 1.04.07                                 | GPU Tesla P100-PCIE-16GB | High | Google Drive 100gb | Google Colab Pro |
 
+## Websites Test
+| Prediksi                       | Prediksi Time<br>(Hour:Minutes:Seconds) | Framework | Runtime                  | Ram  | Disk               | Machine          |
+| ------------------------------ | --------------------------------------- | --------- | ------------------------ | ---- | ------------------ | ---------------- |
+| Named Entity Recognition (NER) | 00.00.06                                | Django    | GPU Tesla P100-PCIE-16GB | High | Google Drive 100gb | Google Colab Pro |
+| Relation Extraction (RE)       | 00.03.01                                | Django    | GPU Tesla P100-PCIE-16GB | High | Google Drive 100gb | Google Colab Pro |
+
 ## RE Research (BILSTM-CRF)
 | Model      | Micro F1 | Macro F1 | Weighted F1 | Training Time<br>(Hour:Minutes:Seconds) | Runtime                  | Ram  | Disk               | Machine          |
 | ---------- | -------- | -------- | ----------- | --------------------------------------- | ------------------------ | ---- | ------------------ | ---------------- |
 | BERT       | 79%      | 84%      | 79%         | 00.41.07                                | GPU Tesla P100-PCIE-16GB | High | Google Drive 100gb | Google Colab Pro |
 | BILSTM-CRF | 75%      | 64%      | 64%         | 1.07.48                                 | GPU Tesla P100-PCIE-16GB | High | Google Drive 100gb | Google Colab Pro |
+
+## Team
+<img src="static/media/photos/mahasiswa_dimas.jpg" alt="MarineGEO circle logo" style="height: 60px; width:60px;border-radius:50%"/><img src="static/media/photos/lipi_slamet.jpg" alt="MarineGEO circle logo" style="height: 60px; width:60px;border-radius:50%"/><img src="static/media/photos/lipi_alhafiz.jpg" alt="MarineGEO circle logo" style="height: 60px; width:60px;border-radius:50%"/><img src="static/media/photos/pembimbing_fitrianingsih.jpg" alt="MarineGEO circle logo" style="height: 60px; width:60px;border-radius:50%"/><img src="static/media/photos/pembimbing_rodiah.jpg" alt="MarineGEO circle logo" style="height: 60px; width:60px;border-radius:50%"/>
