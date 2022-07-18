@@ -1,0 +1,269 @@
+{% load static %}
+<!doctype html>
+<html lang="en" class="no-focus">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+
+        <title>{{ judul }}</title>
+
+        <meta name="description" content="{{ subjudul }}">
+        <meta name="author" content="{{ author }}">
+        <meta name="robots" content="noindex, nofollow">
+
+        <!-- Open Graph Meta -->
+        <meta property="og:title" content="{{ subjudul }}">
+        <meta property="og:site_name" content="{{ author }}">
+        <meta property="og:description" content="{{ subjudul }}">
+        <meta property="og:type" content="website">
+        <meta property="og:url" content="">
+        <meta property="og:image" content="">
+
+        <!-- Icons -->
+        <link rel="shortcut icon" href="{% static "media/favicons/BRIN-LOGO.png" %}">
+        <link rel="icon" type="image/png" sizes="192x192" href="{% static "media/favicons/BRIN-LOGO.png" %}">
+        <link rel="apple-touch-icon" sizes="180x180" href="{% static "media/favicons/BRIN-LOGO.png" %}">
+        <!-- END Icons -->
+
+        <!-- Stylesheets -->
+
+        <!-- Fonts and Codebase framework -->
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Muli:300,400,400i,600,700">
+        <link rel="stylesheet" id="css-main" href="{%  static "css/codebase.min.css" %} ">
+        <!-- END Stylesheets -->
+    </head>
+    <body>
+
+        <!-- Page Container -->
+        <div id="page-container" class="sidebar-inverse side-scroll page-header-fixed main-content-boxed">
+
+            <!-- Sidebar -->
+            <nav id="sidebar">
+                <!-- Sidebar Content -->
+                <div class="sidebar-content">
+                    <!-- Side Header -->
+                    <div class="content-header content-header-fullrow bg-black-op-10">
+                        <div class="content-header-section text-center align-parent">
+                            <!-- Close Sidebar, Visible only on mobile screens -->
+                            <button type="button" class="btn btn-circle btn-dual-secondary d-lg-none align-v-r" data-toggle="layout" data-action="sidebar_close">
+                                <i class="fa fa-times text-danger"></i>
+                            </button>
+                            <!-- END Close Sidebar -->
+
+                            <!-- Logo -->
+                            <div class="content-header-item">
+                                <a class="link-effect font-w700" href="/">
+                                    <img src="{% static "media/favicons/BRIN-WIDTH.png" %}" width="100">
+                                </a>
+                            </div>
+                            <!-- END Logo -->
+                        </div>
+                    </div>
+                    <!-- END Side Header -->
+
+                    <!-- Side Main Navigation -->
+                    <div class="content-side content-side-full">
+                        <ul class="nav-main">
+                            {% for link, name in nav %}
+                                <li>
+                                    <a class="link-effect text-danger" href={{ link }}>
+                                        {{ name }}
+                                    </a>
+                                </li>
+                            {% endfor %}
+                        </ul>
+                    </div>
+                    <!-- END Side Main Navigation -->
+                </div>
+                <!-- Sidebar Content -->
+            </nav>
+            <!-- END Sidebar -->
+
+            <!-- Header -->
+            <header id="page-header">
+                <!-- Header Content -->
+                <div class="content-header">
+                    <div class="content-header-section w-100">
+                        <div class="row no-gutters">
+                            <div class="col">
+                                <!-- Toggle Sidebar -->
+                                <button type="button" class="btn btn-dual-secondary d-lg-none" data-toggle="layout" data-action="sidebar_toggle">
+                                    <i class="fa fa-navicon"></i>
+                                </button>
+                                <!-- END Toggle Sidebar -->
+
+                                <!-- Header Navigation -->
+                                <ul class="nav-main-header">
+                                    {% for link, name in nav %}
+                                        <li>
+                                            <a class="link-effect text-danger" href={{ link }}>
+                                                {{ name }}
+                                            </a>
+                                        </li>
+                                    {% endfor %}
+                                </ul>
+                                <!-- END Header Navigation -->
+                            </div>
+                            <div class="col-3 text-center">
+                                <!-- Logo -->
+                                <div class="content-header-item">
+                                    <a class="font-w700" href="/">
+                                        <img src="{% static "media/favicons/BRIN-WIDTH.png" %}" width="100">
+                                    </a>
+                                </div>
+                                <!-- END Logo -->
+                            </div>
+                            <div class="col text-right">
+                                <!-- Title -->
+                                <span class="d-none d-sm-inline text-secondary">{{ judul }}</span><br>
+                                <span class="d-none d-sm-inline text-secondary">{{ subjudul }}</span>
+                                <!-- END Title -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- END Header Content -->
+
+                <!-- Header Loader -->
+                <div id="page-header-loader" class="overlay-header bg-primary">
+                    <div class="content-header content-header-fullrow text-center">
+                        <div class="content-header-item">
+                            <i class="fa fa-sun-o fa-spin text-white"></i>
+                        </div>
+                    </div>
+                </div>
+                <!-- END Header Loader -->
+            </header>
+            <!-- END Header -->
+
+            <!-- Main Container -->
+            <main id="main-container">
+
+                <!-- Page Content -->
+                <div class="content">
+                    <div class="row">
+                        <div class="col-12 text-center">
+                            <!-- Logo -->
+                            <div class="content-header-item">
+                                <a class="font-w400" href="/">
+                                    <span class="d-md-inline-block">
+                                        <span class="font-size-xl text-dual-primary-dark">Biomedical Named Entity Recognition and Relation Extraction</span><span class="font-size-xl text-danger">&nbsp;BILSTM-CRF</span>
+                                    </span>
+                                </a>
+                            </div>
+                            <!-- END Logo -->
+                        </div>
+                        <!-- Updates -->
+                        <div class="col-lg-4 col-xl-12">
+                            <br><br>
+                            <div class="block block-rounded">
+                                <div class="block-content block-content-full bg-danger-light">
+                                    <span class="font-size-xl text-danger">About Us</span>
+                                </div>
+                                <div class="block-content block-content-full">
+                                    <div class="media">
+                                        <div class="media-body">
+                                            <p class="mb-0">
+                                              
+                                              <div class="row">
+                                                <div class="col-md-6 col-xl-4">
+                                                  <a class="block block-link-pop text-center" href="javascript:void(0)">
+                                                    <div class="block-content block-content-full">
+                                                      <img class="img-avatar" src="{% static "media/photos/lipi_slamet.jpg" %}" alt="">
+                                                    </div>
+                                                    <div class="block-content block-content-full bg-body-light">
+                                                      <div class="font-w600 mb-5">Slamet Riyanto S.Kom., M.M.S.I.</div>
+                                                      <div class="font-size-sm text-muted">Pusat Penelitian Informatika</div>
+                                                      <div class="font-size-sm text-muted">Lembaga Ilmu Pengetahuan Indonesia</div>
+                                                    </div>
+                                                  </a>
+                                                </div>
+                                                <div class="col-md-6 col-xl-4">
+                                                  <a class="block block-link-pop text-center" href="javascript:void(0)">
+                                                    <div class="block-content block-content-full">
+                                                      <img class="img-avatar" src="{% static "media/photos/lipi_alhafiz.jpg" %}" alt="">
+                                                    </div>
+                                                    <div class="block-content block-content-full bg-body-light">
+                                                      <div class="font-w600 mb-5">Al Hafiz Akbar Maulana Siagian Ph.D.</div>
+                                                      <div class="font-size-sm text-muted">Pusat Penelitian Informatika</div>
+                                                      <div class="font-size-sm text-muted">Lembaga Ilmu Pengetahuan Indonesia</div>
+                                                    </div>
+                                                  </a>
+                                                </div>
+                                                <div class="col-md-6 col-xl-4">
+                                                  <a class="block block-link-pop text-center" href="javascript:void(0)">
+                                                    <div class="block-content block-content-full">
+                                                      <img class="img-avatar" src="{% static "media/photos/mahasiswa_dimas.jpg" %}" alt="">
+                                                    </div>
+                                                    <div class="block-content block-content-full bg-body-light">
+                                                      <div class="font-w600 mb-5">Dimas Dwi Putra</div>
+                                                      <div class="font-size-sm text-muted">Mahasiswa Teknik Informatika</div>
+                                                      <div class="font-size-sm text-muted">Universitas Gunadarma</div>
+                                                    </div>
+                                                  </a>
+                                                </div>
+                                              </div>
+
+                                              <div class="row">
+                                                <div class="col-md-6 col-xl-4">
+                                                  <a class="block block-link-pop text-center" href="javascript:void(0)">
+                                                    <div class="block-content block-content-full">
+                                                      <img class="img-avatar" src="{% static "media/photos/pembimbing_fitrianingsih.jpg" %}" alt="">
+                                                    </div>
+                                                    <div class="block-content block-content-full bg-body-light">
+                                                      <div class="font-w600 mb-5">Dr. Fitrianingsih</div>
+                                                      <div class="font-size-sm text-muted">Dosen Pembimbing</div>
+                                                      <div class="font-size-sm text-muted">Universitas Gunadarma</div>
+                                                    </div>
+                                                  </a>
+                                                </div>
+                                                <div class="col-md-6 col-xl-4">
+                                                  <a class="block block-link-pop text-center" href="javascript:void(0)">
+                                                    <div class="block-content block-content-full">
+                                                      <img class="img-avatar" src="{% static "media/photos/pembimbing_rodiah.jpg" %}" alt="">
+                                                    </div>
+                                                    <div class="block-content block-content-full bg-body-light">
+                                                      <div class="font-w600 mb-5">Dr. Rodiah</div>
+                                                      <div class="font-size-sm text-muted">Dosen Pembimbing</div>
+                                                      <div class="font-size-sm text-muted">Universitas Gunadarma</div>
+                                                    </div>
+                                                  </a>
+                                                </div>
+                                              </div>
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- END Updates -->
+
+                    </div>
+                </div>
+                <!-- END Page Content -->
+
+            </main>
+            <!-- END Main Container -->
+
+            <!-- Footer -->
+            <footer id="page-footer" class="bg-white opacity-0">
+                <div class="content py-20 font-size-xs clearfix">
+                    <div class="float-right">
+                        Developed by <a class="font-w600 text-primary" href="https://github.com/dimas263" target="_blank">Dimas</a>
+                    </div>
+                    <div class="float-right">
+                        Support by <a class="font-w600 text-primary" href="http://lipi.go.id/" target="_blank">LIPI&nbsp;&nbsp;</a>and<a class="font-w600 text-primary" href="https://gunadarma.ac.id/" target="_blank">&nbsp;&nbsp;Gunadarma&nbsp;&nbsp;&nbsp;&nbsp;</a>
+                    </div>
+                    <div class="float-left">
+                        <a class="font-w600 text-danger" href="http://lipi.go.id/" target="_blank">BRIN</a> &copy; <span class="js-year-copy">2022</span>
+                    </div>
+                </div>
+            </footer>
+            <!-- END Footer -->
+        </div>
+        <!-- END Page Container -->
+
+        <script src="{% static "js/codebase.core.min.js" %}"></script>
+        <script src="{% static "js/codebase.app.min.js" %}"></script>
+    </body>
+</html>
